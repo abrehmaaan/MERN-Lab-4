@@ -1,0 +1,15 @@
+html(lang='en')
+    head 
+        title Sign Up
+    body 
+        h1 Sign Up Form
+        form(method='POST', action='/signup')        
+            label(for='username') Username: &nbsp; &nbsp; &nbsp; &nbsp;
+            input#username(type='text', name='username', required)
+            br
+            br
+            label(for='password') Password: &nbsp; &nbsp; &nbsp; &nbsp;
+            input#password(type='password', name='password', required)
+            br
+            br
+            input(type='submit', value='Sign Up')

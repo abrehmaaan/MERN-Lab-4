@@ -1,0 +1,43 @@
+html(lang='en')
+    head 
+        title Profile 
+    body 
+        h1 Profile Form
+        form(method='POST', action='/profile')
+            label(for='name') Name: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            input#name(type='text', name='name', required)
+            br
+            br        
+            label(for='username') Username: &nbsp; &nbsp; &nbsp; &nbsp;
+            input#username(type='text', name='username', value= username, readonly)
+            br
+            br
+            label(for='gender') Gender: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            select#gender(name='gender')
+                option(value='male') Male
+                option(value='female') Female
+                option(value='other') Other
+            br
+            br
+            label(for='city') City: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            select#gender(name='city')
+                option(value='ISB') Islamabad
+                option(value='KRI') Karachi
+                option(value='RWP') Rawalpindi
+                option(value='LHR') Lahore
+                option(value='MUL') Multan
+                option(value='PWR') Peshawar
+                option(value='QUE') Quetta
+                option(value='SIA') Sialkot
+                option(value='FSB') Faislabad
+            br
+            br
+            label(for='dob') Date of Birth: &nbsp; &nbsp; &nbsp; &nbsp;
+            input#dob(type='date', name='dob', required)
+            br
+            br
+            label(for='occupation') Occupation: &nbsp; &nbsp; &nbsp; &nbsp;
+            input#occupation(type='text', name='occupation', required)
+            br
+            br
+            input(type='submit', value='Submit')
